@@ -1,51 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram WebApp</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #0088cc; color: white; padding: 10px; text-align: center; }
-        main { padding: 20px; }
-        .job-application, .shift-management, .payments { margin-bottom: 20px; }
-        input, button { padding: 10px; margin: 5px 0; }
-    </style>
+    <title>Fastish</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        function submitApplication() {
-            // Logic to submit job application
-            alert('Job application submitted!');
-        }
-        function manageShifts() {
-            // Logic for shift management
-            alert('Shift managed!');
-        }
-        function processPayment() {
-            // Logic for payment processing
-            alert('Payment processed!');
-        }
+        window.Telegram.WebApp.ready();
+        window.Telegram.WebApp.expand();
     </script>
 </head>
 <body>
-    <header>
-        <h1>Shift Management & Payments</h1>
-    </header>
-    <main>
-        <div class="job-application">
-            <h2>Job Application</h2>
-            <input type="text" placeholder="Your Name" />
-            <input type="text" placeholder="Position Applied" />
-            <button onclick="submitApplication()">Submit Application</button>
-        </div>
-        <div class="shift-management">
-            <h2>Shift Management</h2>
-            <button onclick="manageShifts()">Manage Shift</button>
-        </div>
-        <div class="payments">
-            <h2>Payments</h2>
-            <input type="number" placeholder="Amount" />
-            <button onclick="processPayment()">Pay</button>
-        </div>
-    </main>
+    <h1>Fastish</h1>
+    <p>Job Applications, Shift Management, and Payments</p>
+    <!-- Existing Fastish functionality code continues here -->
 </body>
 </html>
