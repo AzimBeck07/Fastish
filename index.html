@@ -3,58 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fastish - Your Solution for Shift Management</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        .main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Telegram WebApp</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="header">
-    <h1>Welcome to Fastish</h1>
-    <p>Your Solution for Shift Management, Payments, and Job Applications</p>
-</div>
-
-<div class="main">
-    <h2>Manage Your Shifts</h2>
-    <p>Quick access to view and manage your shifts.</p>
-    <button class="button">View Shifts</button>
-
-    <h2>Payments</h2>
-    <p>Secure and fast payments processing.</p>
-    <button class="button">Make Payment</button>
-
-    <h2>Job Applications</h2>
-    <p>Submit and track your job applications easily.</p>
-    <button class="button">Apply Now</button>
-</div>
-
+    <header>
+        <h1>Shift Management System</h1>
+    </header>
+    <main>
+        <section id="job-applications">
+            <h2>Job Applications</h2>
+            <form id="application-form">
+                <input type="text" id="applicant-name" placeholder="Your Name" required>
+                <input type="email" id="applicant-email" placeholder="Your Email" required>
+                <textarea id="application-message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+        <section id="payments">
+            <h2>Payments</h2>
+            <form id="payment-form">
+                <input type="text" id="payment-amount" placeholder="Amount" required>
+                <input type="text" id="payment-method" placeholder="Payment Method" required>
+                <button type="submit">Make Payment</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
