@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fastish Telegram Web App</title>
+    <title>Fastish Web App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
-<body>
-    <h1>Fastish Telegram Web App</h1>
-    <div id="app">
-        <!-- Shifts Management Section -->
-        <h2>Shifts Management</h2>
-        <!-- ... Shifts management code ... -->
-        <p>Manage your shifts here.</p>
-
-        <!-- Payments Section -->
-        <h2>Payments</h2>
-        <!-- ... Payments code ... -->
-        <p>Make your payments here.</p>
-
-        <!-- Job Applications Section -->
-        <h2>Job Applications</h2>
-        <!-- ... Job applications code ... -->
-        <p>Apply for jobs here.</p>
-    </div>
-
-    <script>
-        // Telegram WebApp initialization
-        let app = new Telegram.WebApp();
-        app.ready();
-    </script>
+<body class="dark-theme">
+    <header>
+        <h1>Fastish Web Application</h1>
+        <nav>
+            <ul>
+                <li><a href="#shifts">Shifts Management</a></li>
+                <li><a href="#payments">Payments Tracking</a></li>
+                <li><a href="#jobs">Job Applications</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="shifts">
+            <h2>Shifts Management</h2>
+            <p>Manage your work shifts efficiently.</p>
+            <!-- Shift management features go here -->
+        </section>
+        <section id="payments">
+            <h2>Payments Tracking</h2>
+            <p>Keep track of your payments.</p>
+            <!-- Payment tracking features go here -->
+        </section>
+        <section id="jobs">
+            <h2>Job Applications</h2>
+            <p>Apply for jobs easily.</p>
+            <!-- Job application features go here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Fastish Web App</p>
+    </footer>
 </body>
 </html>
