@@ -4,31 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram WebApp</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #0088cc; color: white; padding: 10px; text-align: center; }
+        main { padding: 20px; }
+        .job-application, .shift-management, .payments { margin-bottom: 20px; }
+        input, button { padding: 10px; margin: 5px 0; }
+    </style>
+    <script>
+        function submitApplication() {
+            // Logic to submit job application
+            alert('Job application submitted!');
+        }
+        function manageShifts() {
+            // Logic for shift management
+            alert('Shift managed!');
+        }
+        function processPayment() {
+            // Logic for payment processing
+            alert('Payment processed!');
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Shift Management System</h1>
+        <h1>Shift Management & Payments</h1>
     </header>
     <main>
-        <section id="job-applications">
-            <h2>Job Applications</h2>
-            <form id="application-form">
-                <input type="text" id="applicant-name" placeholder="Your Name" required>
-                <input type="email" id="applicant-email" placeholder="Your Email" required>
-                <textarea id="application-message" placeholder="Your Message" required></textarea>
-                <button type="submit">Submit Application</button>
-            </form>
-        </section>
-        <section id="payments">
+        <div class="job-application">
+            <h2>Job Application</h2>
+            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Position Applied" />
+            <button onclick="submitApplication()">Submit Application</button>
+        </div>
+        <div class="shift-management">
+            <h2>Shift Management</h2>
+            <button onclick="manageShifts()">Manage Shift</button>
+        </div>
+        <div class="payments">
             <h2>Payments</h2>
-            <form id="payment-form">
-                <input type="text" id="payment-amount" placeholder="Amount" required>
-                <input type="text" id="payment-method" placeholder="Payment Method" required>
-                <button type="submit">Make Payment</button>
-            </form>
-        </section>
+            <input type="number" placeholder="Amount" />
+            <button onclick="processPayment()">Pay</button>
+        </div>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
