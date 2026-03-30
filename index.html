@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Fastish</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <script>
-        window.Telegram.WebApp.ready();
-        window.Telegram.WebApp.expand();
-    </script>
+        // Telegram WebApp Initialization
+        const app = Telegram.WebApp;
+
+        app.ready();
+
+        // Functionality for job applications
+        function submitApplication(data) {
+            // Code to submit the job application data
+            console.log('Application submitted:', data);
+        }
+
+        // Functionality for shift management
+        function manageShifts(data) {
+            // Code to manage shifts
+            console.log('Shifts managed:', data);
+        }
+
+        // Functionality for payments
+        function processPayment(amount) {
+            // Code to process payments
+            console.log('Payment processed:', amount);
+        }
+    <\/script>
 </head>
 <body>
-    <h1>Fastish</h1>
-    <p>Job Applications, Shift Management, and Payments</p>
-    <!-- Existing Fastish functionality code continues here -->
+    <h1>Welcome to the Job Application Portal</h1>
+    <!-- Additional content goes here -->
 </body>
 </html>
